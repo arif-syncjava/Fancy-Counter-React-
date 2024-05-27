@@ -1,3 +1,12 @@
-export default function Title() {
-    return <h1>Fancy Counter</h1>
+export default function Title({locked}) {
+    return (
+        <h1 className="title">
+            {
+                locked ? <span>Limit over buy <b>Pro</b> for &gt;5 </span>
+                    : "  Fancy Counter "
+            }
+
+        </h1>
+    )
+
 }
